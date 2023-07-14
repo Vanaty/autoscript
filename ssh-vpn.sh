@@ -95,7 +95,7 @@ wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Vanaty/aut
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://vpnasian.com/autoscript/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/Vanaty/autoscript/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
